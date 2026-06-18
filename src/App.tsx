@@ -1,8 +1,11 @@
 import "./App.css";
+import { Header } from "./Header";
 
 function App() {
     return (
-        <h1>Practice React</h1>
+        <>
+            <Header/>
+        </>
     );
 }
 export default App;
