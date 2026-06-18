@@ -1,9 +1,10 @@
  import type { Person } from "./models/person"
 
-export function Header({name, age}: Person) {
+export function Header({name, age, dob}: Person) {
     return (
         <header>
-            <h1>{name}'s Kitchen {age !== undefined ? ` - ${age}` : ""} </h1>
+            <h1>{name}'s age is {age !== undefined ? `${age}` : ""}</h1>
+            <p>Date of Birth: {dob?.toLocaleDateString()}</p>
         </header>
     )
 }
