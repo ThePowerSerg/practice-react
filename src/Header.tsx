@@ -1,9 +1,9 @@
-import type { Person } from "./Person"
+ import type { Person } from "./models/person"
 
-export function Header(p: Person) {
+export function Header({name, age}: Person) {
     return (
         <header>
-            <h1>{p.name}'s Kitchen</h1>
+            <h1>{name}'s Kitchen {age !== undefined ? ` - ${age}` : ""} </h1>
         </header>
     )
 }

@@ -1,14 +1,13 @@
 import "./App.css";
 import { Header } from "./Header";
-import type { Person } from "./Person";
+import type { Person } from "./models/person";
 
-const person: Person = {name: "Mario", age:10}
+const person: Person = {name: "Mario", age: 10}
 
-function App() {
+export default function App() {
     return (
         <>
-            <Header{...person}/>
+            <Header {...person} />
         </>
     );
 }
-export default App;
