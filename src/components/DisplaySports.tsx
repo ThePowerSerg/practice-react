@@ -2,7 +2,7 @@ import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import ListItemText from "@mui/material/ListItemText"
 import Typography from "@mui/material/Typography"
-import type { Sports } from "./models/sports"
+import type { Sports } from "../models/sports"
 
 export const DisplaySports = ({ sports }: { sports: Sports[] }) => (
     <>

@@ -1,4 +1,4 @@
- import type { Person } from "./models/person"
+ import type { Person } from "../models/person"
 
 export function Header({name, age, dob}: Person) {
     return (
