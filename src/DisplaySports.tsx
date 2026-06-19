@@ -1,7 +1,20 @@
-import type {Sports} from "./models/sports"
+import List from "@mui/material/List"
+import ListItem from "@mui/material/ListItem"
+import ListItemText from "@mui/material/ListItemText"
+import Typography from "@mui/material/Typography"
+import type { Sports } from "./models/sports"
 
 export const DisplaySports = ({ sports }: { sports: Sports[] }) => (
-    <ul className="sports-list">
-        {sports.map(x => <li>{x.name}</li>)}
-    </ul>
+    <>
+     <div>
+        <Typography variant="h6">Favorite Sports</Typography>
+        <List>
+            {sports.map(x => (
+                <ListItem key={x.id}>
+                    <ListItemText primary={x.name} />
+                </ListItem>
+            ))}
+        </List>
+     </div>
+    </>
 )
