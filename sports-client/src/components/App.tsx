@@ -6,6 +6,7 @@ import { useAppData } from "../hooks/useAppData";
 import Typography from "@mui/material/Typography"
 import biking from "../images/biking.jpg"
 
+
 export default function App() {
     const { person, sports } = useAppData()
 
