@@ -1,4 +1,6 @@
-export const pets = [
+import type { Pet } from "../models/pet"
+
+export const pets: Pet[] = [
   {
     profileImg: 'https://images.unsplash.com/photo-1609992556706-14a7056ea745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
     username: 'ScrungeCat',

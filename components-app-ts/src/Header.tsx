@@ -1,4 +1,6 @@
-function Header({ profileImg, username }) {
+import type { Pet } from "./models/pet";
+
+function Header({ profileImg, username }: Pet) {
     return (
         <>
             <img src={profileImg} />

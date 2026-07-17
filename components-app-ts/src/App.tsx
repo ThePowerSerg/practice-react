@@ -1,4 +1,4 @@
-import { pets } from "./petData";
+import { pets } from "./Data/petData";
 import Card from "./Card";
 
 function App() {
