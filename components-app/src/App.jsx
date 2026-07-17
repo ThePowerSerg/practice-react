@@ -4,8 +4,8 @@ import Card from "./Card";
 function App() {
    return (
       <div>
-         {pets.map((pet) => (
-            <Card petDetails={pet} />
+         {pets.map((pet, i) => (
+            <Card petDetails={pet} key={i} />
          ))}
       </div>
    );
