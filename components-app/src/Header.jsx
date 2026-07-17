@@ -1,8 +1,8 @@
-function Header(props) {
+function Header({ profileImg, username }) {
     return (
         <>
-            <img src={props.profileImg} />
-            <h1>{props.username}</h1>
+            <img src={profileImg} />
+            <h1>{username}</h1>
         </>
     )
 }

@@ -1,11 +1,11 @@
-import { comments } from "./commentData";
+import { pets } from "./petData";
 import Card from "./Card";
 
 function App() {
    return (
       <div>
-         {comments.map((comment) => (
-            <Card commentObject={comment} />
+         {pets.map((pet) => (
+            <Card petDetails={pet} />
          ))}
       </div>
    );

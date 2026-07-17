@@ -1,14 +1,14 @@
 import Header from "./Header";
 import Body from "./Body";
 
-function Card(props) {
+function Card({ petDetails}) {
     return (
         <>
             <Header
-                profileImg={props.commentObject.profileImg}
-                username={props.commentObject.username}
+                profileImg={petDetails.profileImg}
+                username={petDetails.username}
             />
-            <Body comment={props.commentObject.comment} />
+            <Body comment={petDetails.comment} />
         </>
     );
 }
