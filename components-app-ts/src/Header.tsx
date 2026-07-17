@@ -1,10 +1,12 @@
 import type { Pet } from "./models/pet";
 
-function Header({ profileImg, username }: Pet) {
+type HeaderProps = Pick<Pet, "profileImg" | "username">;
+
+function Header({ profileImg, username }: HeaderProps) {
     return (
         <>
             <img src={profileImg} />
-            <h1>{username}</h1>
+            <h1 style={{ color: "red" }}>{username}</h1>
         </>
     )
 }

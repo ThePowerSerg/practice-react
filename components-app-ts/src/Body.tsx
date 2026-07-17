@@ -1,6 +1,8 @@
 import type { Pet } from "./models/pet";
 
-function Body({ comment }: Pet) {
+type BodyProps = Pick<Pet, "comment">;
+
+function Body({ comment }: BodyProps) {
     return (
         <p>{comment}</p>
     )

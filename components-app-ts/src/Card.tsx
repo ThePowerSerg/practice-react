@@ -1,8 +1,10 @@
-import type { Pet } from "./models/pet";
 import Header from "./Header";
 import Body from "./Body";
+import type { Pet } from "./models/pet";
 
-function Card({ petDetails}: Pet) {
+type CardProps = { petDetails: Pet; }
+
+function Card({ petDetails}: CardProps) {
     return (
         <>
             <Header
